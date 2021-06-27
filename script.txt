@@ -1,0 +1,9 @@
+Rodar a aplicação no profile prod
+java -jar -Dspring.profile.active-prod forum.jar
+é preciso passar as variáveis de ambiente
+
+java -jar -DFORUM_DATABASE_URL=DATABASE:h2:
+mem:alura-forum
+-DFORUM_DATABASE_USERNAME=sa
+-DFORUM_DATABASE_PASSWORD=
+-DFORUM_JWT_SECRET=123456 forum.jar
